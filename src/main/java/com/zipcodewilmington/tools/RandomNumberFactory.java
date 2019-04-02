@@ -18,4 +18,13 @@ public abstract class RandomNumberFactory {
     public static Integer createInteger(Integer min, Integer max) {
         return createFloat(min, max).intValue();
     }
+    public static int getRandomAreaCode(){
+        return createFloat(100,999).intValue();
+    }
+    public static int getPhoneLineCode(){
+        return createFloat(1000,9999).intValue();
+    }
+    public static int getCentralOfficeCode(){
+        return getRandomAreaCode();
+    }
 }
